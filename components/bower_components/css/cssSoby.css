@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Germania+One);
+@import url(https://fonts.googleapis.com/css?family=Gorditas:700);
+@import url(https://fonts.googleapis.com/css?family=Francois+One);
+@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
+@import url(https://fonts.googleapis.com/css?family=Buenard);
+
+
+.alert {
+	color: red;
+}
+.col-md-6 p{
+	color: #CCCCCC;
+	font-weight: bold;
+}
+.title{
+	font-family: 'Gorditas', cursive;
+}
+.neg {
+	font-weight: bold;
+}
+.fundo-verde {
+	background-color: green;
+}
+.cor-branca {
+	color: white;
+}
+.container-fluid {
+	padding: 70px;
+}
+.container-fluid h1{
+	font-size: 60px;
+	font-family: 'Gorditas', cursive;
+}
+
+.container-fluid p{
+	font-size: 30px;
+	font-family: 'Finger Paint', cursive;
+}
+.text-center h2{
+	font-size: 35;
+	font-family: 'Francois One', sans-serif;
+
+}
+.col-md-4 a{
+
+	color: white;
+}
+.col-md-4 a:hover{
+	color:black;
+	text-decoration: none;
+}
+
+#lin  h1{
+	font-family: 'Germania One', cursive;
+}
+#lin p{
+	font-size: 20px;
+	font-family: 'Buenard', serif;
+}
+#contato h3{
+	font-family: 'Francois One', sans-serif;
+}
+@media(max-width: 761px ){
+	.container-fluid h1{
+		font-size: 46px;
+
+	}
+	.container-fluid p{
+		font-size: 20px;
+		text-align: center;
+	}
+	.text-center h2{
+		font-size: 30px;
+		font-family: 'Francois One', sans-serif;
+
+	}
+
+	#lin p{
+		font-size: 18px;
+	}
+	#contato h3{
+		font-family: 'Francois One', sans-serif;
+		font-size: 19px;
+	}
+}
