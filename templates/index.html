@@ -2,82 +2,54 @@
 {% load static %}
 {% block container %}
 
-<div class="section">
-	<div class="container">
-	<div class="row" id="Banho">
-	<div class="col-md-4">
-			<img class="img-responsive" alt="450" width="450"  src="{% static 'img/banho.png' %}">
-		</div>
-		<div class="col-md-8" id="lin">
-			<h1 id="Banho">Banho & Tosa</h1>
+<div class="container-fluid center">
+	<h1>Casa de Ração Scooby</h1>
+	<p>A melhor casa de ração da região de Franco</p>
+</div>
+
+<section>
+<div class="col s12 center">
+    <div class="row">
+        <div class="col m4">
+            <img class="img-responsive" alt="450" width="450"  src="{% static 'img/banho.png' %}">
+        </div>
+        <div class="col m8">
+            <h1 id="Banho">Banho & Tosa</h1>
 			<p>Contamos com uma equipe de profissionais qualificados para deixar o seu bichinho de estimação mais limpo, bonito e saudáve</p>
 			<p class="neg">Banho - Tosa Higiênica - Tosa Estética - Hidratação - Limpeza das Orelhas - Corte de Unhas</p>
-		</div>
-	</div>
+        </div>
+    </div>
 </div>
-</div>
-<div class="section">
-<div class="container">
-	<div class="row" id="Taxi">
-		<div class="col-md-7" id="lin">
-			<h1>Taxi Dog</h1>
+</section>
+
+<section>
+<div class="col s12">
+    <div class="row">
+        <div class="col m8">
+            <h1>Taxi Dog</h1>
 			<p>Buscamos o seu bichinho de estimação na sua casa. O transporte é realizado em caixas de transportes individualizadas e higienizadas. </p>
 			<p class="neg">Taxi Dog</p>
-		</div>
-		<div class="col-md-5">
-			<img class="img-responsive" alt="450" width="450" src="{% static 'img/transp.png' %}">
-		</div>
-	</div>
+        </div>
+        <div class="col m4">
+            <img class="img-responsive" alt="450" width="450" src="{% static 'img/transp.png' %}">
+        </div>
+    </div>
 </div>
-</div>
-<div class="section">
-<div class="container">
-		<div class="row" id="Venda">
-		<div class="col-md-5" >
-			<img class="img-responsive" alt="450" width="450"  src="{% static 'img/racao.png' %}">
-		</div>
-		<div class="col-md-7" id="lin">
-			<h1>venda De Ração</h1>
+</section>
+
+<section>
+<div class="col s12">
+    <div class="row">
+        <div class="col m4">
+            <img class="img-responsive" alt="450" width="450"  src="{% static 'img/racao.png' %}">
+        </div>
+        <div class="col m8 center">
+            <h1>venda De Ração</h1>
 			<p> A ração do seu melhor amigo acabou? É só ligar que entregamos na sua casa!</p>
 			<p class="neg">Tele Entrega</p>
-		</div>
-	</div>
+        </div>
+    </div>
 </div>
-</div>
-<div class="section">
-<div class="text-center">
-<h2>Contato</h2>
-<br/>
-</div>
-<div class="section" id="contato">
-<div class="container">
-	<div class="row">
-		<div class="col-md-6">
-			<h3>Endereço : </h3>
-			<p>AV . Arcos Iris N° 1183 - Lagoa Azul , Franco da Rocha - SP</p>
-			<h3>Fone :</h3>
-			<p>(11) 2867-2665</p>
-			<h3>E-mail :</h3>
-			<p>Di3g0d0ming05@gmail.com</p>
-		</div>
-		<div class="col-md-6">
-			{% for fields in form %}
-			<form class="form-group" method="post">
-			{% csrf_token %}
-			{{fields.label_tag}}
-			{{fields}}
-			{% if fields.errors %}
-				<div class="alert">
-					{{fields.errors}}
-				</div>
-			{% endif %}
-			{% endfor%}
-			<br/>
-			<input class="btn btn-primary btn-block btn-lg" type="submit"/>
-			</form>
-		</div>
-	</div>
-</div>
-</div>
-</div>
+</section>
+
 {% endblock %}

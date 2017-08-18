@@ -139,7 +139,7 @@ STATICFILES_FINDERS = (
 )
 
 BOWER_INSTALLED_APPS = (
-    'bootstrap#v4.0.0-alpha.6',
+    'materialize',
 )
 
 

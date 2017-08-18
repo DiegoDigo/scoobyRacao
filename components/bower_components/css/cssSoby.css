@@ -1,85 +1,24 @@
-@import url(https://fonts.googleapis.com/css?family=Germania+One);
-@import url(https://fonts.googleapis.com/css?family=Gorditas:700);
-@import url(https://fonts.googleapis.com/css?family=Francois+One);
-@import url(https://fonts.googleapis.com/css?family=Finger+Paint);
-@import url(https://fonts.googleapis.com/css?family=Buenard);
+@import url('https://fonts.googleapis.com/css?family=Acme');
 
 
-.alert {
-	color: red;
-}
-.col-md-6 p{
-	color: #CCCCCC;
-	font-weight: bold;
-}
-.title{
-	font-family: 'Gorditas', cursive;
-}
-.neg {
-	font-weight: bold;
-}
-.fundo-verde {
-	background-color: green;
-}
-.cor-branca {
-	color: white;
-}
-.container-fluid {
-	padding: 70px;
-}
-.container-fluid h1{
-	font-size: 60px;
-	font-family: 'Gorditas', cursive;
+nav {
+    height: 75px;
 }
 
-.container-fluid p{
-	font-size: 30px;
-	font-family: 'Finger Paint', cursive;
-}
-.text-center h2{
-	font-size: 35;
-	font-family: 'Francois One', sans-serif;
-
-}
-.col-md-4 a{
-
-	color: white;
-}
-.col-md-4 a:hover{
-	color:black;
-	text-decoration: none;
+nav ul ,.brand-logo{
+    margin-top: 6px;
+    font-family: 'Acme', sans-serif !important;
+    font-weight: 200 !important;
 }
 
-#lin  h1{
-	font-family: 'Germania One', cursive;
+nav ul li a:hover{
+    transition: 0.4s;
+    background-color: #FFFFFF;
+    color: green;
 }
-#lin p{
-	font-size: 20px;
-	font-family: 'Buenard', serif;
-}
-#contato h3{
-	font-family: 'Francois One', sans-serif;
-}
-@media(max-width: 761px ){
-	.container-fluid h1{
-		font-size: 46px;
 
-	}
-	.container-fluid p{
-		font-size: 20px;
-		text-align: center;
-	}
-	.text-center h2{
-		font-size: 30px;
-		font-family: 'Francois One', sans-serif;
 
-	}
-
-	#lin p{
-		font-size: 18px;
-	}
-	#contato h3{
-		font-family: 'Francois One', sans-serif;
-		font-size: 19px;
-	}
+.brand-logo {
+    font-family: 'Acme', sans-serif !important;
+    font-weight: 700 !important;
 }

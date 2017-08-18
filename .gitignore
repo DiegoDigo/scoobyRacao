@@ -1,7 +1,7 @@
 .idea/
-components/bower_components/bootstrap
 components/bower_components/jquery
-components/bower_components/tether
 db.sqlite3
 *.pyc
 __pycache__/
+components/bower_components/materialize/
+
