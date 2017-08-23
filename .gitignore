@@ -1,7 +1,5 @@
 .idea/
-components/bower_components/jquery
-db.sqlite3
-*.pyc
 __pycache__/
-components/bower_components/materialize/
-
+img/
+*.pyc
+db.sqlite3

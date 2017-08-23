@@ -39,11 +39,11 @@ NATIVE_APPS = [
     'django.contrib.staticfiles',
 ]
 TERCEIROS_APPS = [
-  'djangobower',
+    'rest_framework',
 ]
 
 MY_APPS = [
-   'page',
+    'produto',
 ]
 
 INSTALLED_APPS = NATIVE_APPS + TERCEIROS_APPS + MY_APPS
