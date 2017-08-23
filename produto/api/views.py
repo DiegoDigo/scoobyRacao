@@ -1,13 +1,11 @@
 from rest_framework import generics
-from produto.models import Produto
-from .serializers import ProdutoSerializer
-from rest_framework.permissions import IsAuthenticated
+from produto.models import Produto, Categoria
+from .serializers import ProdutoSerializer, CategoriaSerializer
 
 
 class Produtos(generics.ListAPIView):
     queryset = Produto.objects.all()
     serializer_class = ProdutoSerializer
-    authentication_classes = [IsAuthenticated]
 
 
 class ProdutoCategoria(generics.ListAPIView):
@@ -29,3 +27,4 @@ class ProdutoCategoriaAnimal(generics.ListAPIView):
 
     def get_queryset(self):
         return Produto.objects.produtoCategoriaAnimal(self.kwargs['categoriaId'], self.kwargs['animalId'])
+
