@@ -40,10 +40,13 @@ NATIVE_APPS = [
 ]
 TERCEIROS_APPS = [
     'rest_framework',
+    'rest_framework.authtoken',
+    'rest_auth',
 ]
 
 MY_APPS = [
     'produto',
+    'usuario',
 ]
 
 INSTALLED_APPS = NATIVE_APPS + TERCEIROS_APPS + MY_APPS
@@ -58,12 +61,20 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    )
+}
+
 ROOT_URLCONF = 'scoobyRacao.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,  'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,17 +141,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATIC_URL = '/static/'
 
-BOWER_COMPONENTS_ROOT = os.path.join(BASE_DIR, 'components')
 
-STATICFILES_FINDERS = (
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'djangobower.finders.BowerFinder',
-)
 
-BOWER_INSTALLED_APPS = (
-    'materialize',
-)
 
 
 

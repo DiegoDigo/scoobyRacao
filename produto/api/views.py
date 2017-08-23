@@ -1,11 +1,13 @@
 from rest_framework import generics
-from produto.models import Produto, Categoria
-from .serializers import ProdutoSerializer, CategoriaSerializer
+from produto.models import Produto
+from .serializers import ProdutoSerializer
+from rest_framework.permissions import IsAuthenticated
 
 
 class Produtos(generics.ListAPIView):
     queryset = Produto.objects.all()
     serializer_class = ProdutoSerializer
+    authentication_classes = [IsAuthenticated]
 
 
 class ProdutoCategoria(generics.ListAPIView):
